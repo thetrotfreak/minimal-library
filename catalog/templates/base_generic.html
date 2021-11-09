@@ -15,6 +15,11 @@
     <div class="row">
         <div class="col-sm-2">
             {% block sidebar %}
+                <hr>
+                <ul class="sidebar-nav">
+                    <li><a href="/admin">Admin Portal</a></li>
+                </ul>
+                <hr>
                 <ul class="sidebar-nav">
                     <li><a href="{% url 'index' %}">Home</a></li>
                     <li><a href="{% url 'books' %}">All books</a></li>

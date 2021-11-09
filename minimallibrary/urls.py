@@ -25,3 +25,7 @@ urlpatterns = [
                   path('', RedirectView.as_view(url='catalog/', permanent=True)),
                   path('accounts/', include('django.contrib.auth.urls'))
               ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+admin.site.site_header = "Library Admin"
+admin.site.site_title = "Library Admin Portal"
+admin.site.index_title = "Welcome to Minimal Library Portal"
